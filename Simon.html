@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .box{
+            height:200px;
+            width: 200px;
+            border: 10px solid black;
+            border-radius: 30px;
+            margin: 1.5rem;
+            cursor: pointer;
+        }
+        .bis-box{
+            display: flex;
+            justify-content: center;
+        }
+        .pink{
+            background-color: #d95980;
+        }
+        .green{
+            background-color: #63aac0;
+        }
+        .yellow{
+            background-color: #f99b45;
+        }
+        .blue{
+            background-color: #819ff0;
+        }
+        .flash{
+            background-color: white;
+        }
+        .userflash{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="simon-says">
+        <h2>Simon Game</h2>
+        <h3>Press any key to start the game</h3>
+        <div class="bis-box">
+            <div class="line-1">
+                <div class="box pink" type="button" id="pink"></div>
+                <div class="box yellow" type="button" id="yellow"></div>
+            </div>
+            <div class="lin-2">
+                <div class="box green" type="button" id="green"></div>
+                <div class="box blue" type="button" id="blue"></div>
+            </div>
+        </div>
+        <h2>Highest Score :- <span>0</span></h2>
+    </div>
+    <script src="jsfile.js"></script>
+</body>
+</html>
